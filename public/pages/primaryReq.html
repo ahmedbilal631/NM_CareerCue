@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    >
+    <link rel="stylesheet" href="../myStyle/myCss.css" />
+    <style>
+      .bgImg {
+        background-image: url("../image/reportBg.jpg");
+      }
+      .myBtn {
+        margin-right: 2%;
+      }
+      .myNavBtn:hover {
+        font-weight: 600;
+        border-bottom: 1px solid white;
+      }
+    </style>
+    <title>Educational</title>
+</head>
+
+<body>
+        <div>
+                <nav class="navbar fixed navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand myFontBold" href="#">NM - Career Cue</a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active myNavBtn">
+                        <a class="nav-link" href="../index.html" ;
+                          >Home <span class="sr-only">(current)</span></a
+                        >
+                      </li>
+                      <li class="nav-item active myNavBtn">
+                        <a class="nav-link" href="./devGroup.html">Developers Group </a>
+                      </li>
+                      <li class="nav-item active myNavBtn">
+                        <a class="nav-link" href="./about.html">About app </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="bgImg">
+                <br />
+                <br /><br /><br />
+                <center>
+                  <p class="myFontSize4 myFontClrWhite myFontBoldX">NM - Career Cue</p>
+                  <p class="myFontSize2 myFontClrWhite myFontBold">
+                    The place, where you decide your future
+                  </p>
+                </center>
+                <br />
+                <br /><br /><br />
+              </div>
+      
+
+    <div class="container">
+
+        <br><br>
+        <center>
+                <p class="myFontBolder">
+                  Potential essment :         </p>
+                <p>Put some information about you!</p>
+                <hr />
+              </center>
+              <br />
+      
+        <div class="">
+            <!-- <form onsubmit="Next()"> -->
+            <div class="form-group">
+                <label for="txtWant" class="myFontBold">You want to be a?</label>
+                <select name="want" class="form-control" id="txtWant">
+                    <option value="med">Doctor</option>
+                    <option value="engg">Engineer</option>
+                    <option value="bss">Business man</option>
+                    <option value="cs">Computer Sciences</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="txtDiscipline" class="myFontBold">You passed your inter in?</label>
+                <select name="discipline" class="form-control" id="txtDiscipline">
+                    <option value="med">PRE-Medical</option>
+                    <option value="engg">PRE-Engineering</option>
+                    <option value="bss">PRE_Business</option>
+                    <option value="cs">PRE-COmputer Sciences</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="txtTotalMarks" class="myFontBold">Your marks in last final exams:</label>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="txtTotalMarks">Total marks:</label>
+                        </td>
+                        <td>
+                            <input type="number" value="0" class="form-control" id="txtTotalMarks" aria-describedby="emailHelp" placeholder="1100">
+                        </td>
+                        <td>
+                            <label for="txtObtainedMarks">You obtained:</label>
+                        </td>
+                        <td>
+                            <input type="number" value="0" class="form-control" id="txtObtainedMarks" aria-describedby="emailHelp" placeholder="800">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label for="txtParticularSub" class="myFontBold">Select you particular subject:</label>
+                <select name="particularSub" class="form-control" id="txtParticularSub">
+                    <option value="bio">Bio</option>
+                    <option value="math">Math</option>
+                </select>
+                <label for="txtParticularSubMarks" class="myFontBold">Your marks in particular subject in last final exams:</label>
+                <small class="text-danger ">Please fill the form carefully.</small>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="txtTotalMarks" class="myFontBold">Total marks:</label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="txtPSTotalMarks" aria-describedby="emailHelp" placeholder="100" required>
+
+                        </td>
+                        <td>
+                            <label for="txtObtainedMarks"class"myFontBold">You obtained:</label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="txtPSObtainedMarks" aria-describedby="emailHelp" placeholder="80" required>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <p class="myFontBold">Select the subject in which you are interested:</p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtMath" value="math">
+                                <label class="form-check-label" class="myFontBold" for="txtMath">Math</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtBio" value="bio">
+                                <label class="form-check-label" for="txtBio">Bio</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtComp" value="cmp">
+                                <label class="form-check-label" for="txtComp">Computer</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtChe" value="che">
+                                <label class="form-check-label" for="txtChe">Chemistry</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtPhy" value="phy">
+                                <label class="form-check-label" class="myFontBold" for="txtPhy">Physics</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtBss" value="other">
+                                <label class="form-check-label" class="myFontBold" for="txtOther">Business</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <p class="myFontBold"> Select your hobbies:</p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtSubPrac" value="option1">
+                                <label class="form-check-label" for="txtSubPrac">Subject Practice</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtBookReading" value="option1">
+                                <label class="form-check-label" for="txtBookReading">Book reading</label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtGardening" value="option1">
+                                <label class="form-check-label" for="txtGardenong">Gardening</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtTV" value="option1">
+                                <label class="form-check-label" for="txtTV">Watching TV</label>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtNews" value="option1">
+                                <label class="form-check-label" for="txtNews">Newspaper</label>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="txtGames" value="option1">
+                                <label class="form-check-label" for="txtGames">Games/sports</label>
+                            </div>
+
+                        </td>
+
+
+                    </tr>
+                </table>
+
+
+
+            </div>
+            <center>
+
+                <button onclick="validator()" class="btn btn-primary myFontBold">Next</button>
+                <!-- </form> -->
+            </center>
+
+        </div>
+        <br><br>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" -->
+    <!-- crossorigin="anonymous"></script> -->
+    <script src="./script/primaryMain.js"></script>
+</body>
+
+</html>              <div class="bg-light">
+        <br />
+        <center>
+          <p class="myFontBold">&copy;nmcc</p>
+          <p class="">
+            <a href="#">Terms & conditions</a> || <a href="#">admin</a> ||
+            <a href="#">all rights are reserved</a>
+          </p>
+        </center>
+        <br />
+        <br /><br />
+      </div>
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script> -->
+
+    <!-- <script src="./script/firebase.js"></script> -->
+    <!-- <script src="./script/database.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="../bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../myStyle/myCss.css" />
+    <style>
+      .bgImg {
+        background-image: url("../image/reportBg.jpg");
+      }
+    </style>
+    <title>Report</title>
+  </head>
+
+  <body>
+    <div>
+      <nav class="navbar fixed navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand myFontBold" href="#">NM - Career Cue</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active myNavBtn">
+              <a class="nav-link" href="../index.html" ;
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active myNavBtn">
+              <a class="nav-link" href="./devGroup.html">Developers Group </a>
+            </li>
+            <li class="nav-item active myNavBtn">
+              <a class="nav-link" href="./about.html">About app </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="bgImg">
+      <br />
+      <br /><br /><br />
+      <center>
+        <p class="myFontSize4 myFontClrWhite myFontBoldX">NM - Career Cue</p>
+        <p class="myFontSize2 myFontClrWhite myFontBold">
+          The place, where you decide your future
+        </p>
+      </center>
+      <br />
+      <br /><br /><br />
+    </div>
+
+    <div class="container">
+      <br /><br />
+      <div class="table-responsive-sm">
+        <table class="table table-bordered">
+          <thead>
+            <tr class="bgImg">
+              <td colspan="2" rowspan="2">
+                <center>
+                  <p class="myFontBold myFontClrWhite myFontSize3">
+                    NM - Career Cue
+                  </p>
+                  <p class="myFontBold myFontClrWhite myFontSize1">
+                    The place where you decide your future!!
+                  </p>
+                </center>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <center>
+                  <p class="myFontBold">
+                    Your final report
+                  </p>
+                </center>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Client_Name
+              </td>
+              <td id="userNameId">
+                .
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Passed_Intermediate
+              </td>
+              <td id="disciplineId">
+                .
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Total_Potentail
+              </td>
+              <td id="potentialId">
+                .
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Personality_Assessment
+              </td>
+              <td id="personalityId">
+                .
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Chances_to_go_in_desired_degree
+              </td>
+              <td id="wantId">
+                want
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Chances_to_go_in_desired_institute
+              </td>
+              <td id="instituteId">
+                institute
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Financial_situations
+              </td>
+              <td id="incomeId">
+                total income
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p class="myFontBold">
+                  Suggested_Degrees
+                </p>
+                <p id="degreeSugId">degree</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p class="myFontBold">
+                  Suggested_Institutes
+                </p>
+                <p id="insttId">institute</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <center>
+                  <p class="myFontBoldX">
+                    Thank You!
+                  </p>
+                  <p>
+                    This is system generated estimate, We are not responsible
+                    for the actions taken on the basis of this report.
+                  </p>
+                  <p>NM - Career Cue &copy;</p>
+                </center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+    </div>
+    <div class="bg-light">
+      <br />
+      <center>
+        <p class="myFontBold">&copy;nmcc</p>
+        <p class="">
+          <a href="#">Terms & conditions</a> || <a href="#">admin</a> ||
+          <a href="#">all rights are reserved</a>
+        </p>
+      </center>
+      <br />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" -->
+    <!-- crossorigin="anonymous"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script src="./script/reportScript.js"></script>
+  </body>
+</html>
